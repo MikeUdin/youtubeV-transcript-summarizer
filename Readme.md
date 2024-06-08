@@ -1,10 +1,10 @@
 # YouTube Video Transcript Summarizer with Gemini API
 
-This project provides a Streamlit web application that extracts transcripts from YouTube videos and generates detailed notes using Google's Gemini Pro model. The application is designed to be user-friendly and efficient, offering a simple interface to summarize YouTube videos into concise and valuable notes.
+This project provides a Streamlit web application that extracts transcripts from YouTube videos and generates detailed notes using Google's Gemini API. The application is designed to be user-friendly and efficient, offering a simple interface to summarize YouTube videos into concise and valuable notes.
 
 ## Features
 - Extracts transcript details from YouTube videos.
-- Utilizes Google's Gemini Pro model for generating detailed content.
+- Utilizes Google's Gemini API for generating detailed content.
 - User-friendly interface built with Streamlit.
 - Displays video thumbnail for better visualization.
 - Handles errors gracefully, such as when subtitles are disabled.
@@ -32,6 +32,11 @@ Follow these steps to set up the project:
     pip install -r requirements.txt
     ```
 
+4. **Generater you own Google's Gemini API key**
+   ```sh
+   # Replace GOOGLE_API_KEY with your own Gemini API key.
+    genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+   ```
 ## Usage
 To run the application, use the following command:
 ```sh
